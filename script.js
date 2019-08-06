@@ -33,9 +33,9 @@ button.addEventListener("click", () => {
         div.appendChild(img);
         container.appendChild(div);
     }
-    
+
     chapitreSuivant.value = (Number(chapitre) + 1);
-//    console.log(chapitreSuivant.value);
+    //    console.log(chapitreSuivant.value);
 })
 
 
@@ -48,8 +48,8 @@ buttonNext.addEventListener("click", () => {
     var container = document.getElementById("container");
     container.innerHTML = "";
 
-    let chapitreEnCours = document.getElementById('chapitre').value;
-    
+    let chapitreEnCours = document.getElementById('chapitre');
+
     let chapitre = document.getElementById('chapitreSuivant').value;
 
     for (let i = 1; i <= 24; i++) {
@@ -71,8 +71,8 @@ buttonNext.addEventListener("click", () => {
         div.appendChild(img);
         container.appendChild(div);
     }
-    
-    chapitreSuivant.value = (Number(chapitre) + 1);
-    window.scrollTo(0,0);
-})
 
+    chapitreSuivant.value = (Number(chapitre) + 1);
+    chapitreEnCours.value = chapitre;
+    window.scrollTo(0, 0);
+})
