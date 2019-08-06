@@ -4,22 +4,34 @@
     box-sizing: border-box;
 }
 
-/*
-body{
-    display: flex;
-}
-*/
 
 .scan{
     
     display: flex;
 }
 
+
 img{
-/*
-   height: 100vh;
-    width: 100%;
-    object-fit: contain;
-*/
     margin: auto;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.btn-container input{
+    font-size: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-container button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
 }
