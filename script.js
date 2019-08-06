@@ -73,5 +73,6 @@ buttonNext.addEventListener("click", () => {
     }
     
     chapitreSuivant.value = (Number(chapitre) + 1);
+    window.scrollTo(0,0);
 })
 
